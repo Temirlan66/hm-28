@@ -54,7 +54,6 @@ const List = styled.ul`
     }
     span {
         color: green;
-        background-color: antiquewhite;
         padding: 10px;
         font-size: 20px;
         font-weight: 800;

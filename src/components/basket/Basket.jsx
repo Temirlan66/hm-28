@@ -14,7 +14,6 @@ const Basket = ({ onClose, open }) => {
     const getTotalPrice = () => {
         return items.reduce((sum, { price, amount }) => sum + amount * price, 0)
     }
-    console.log(getTotalPrice())
     const decrementAmount = (id, amount) => {
         if (amount > 1) {
             dispatch(updeteBasketItem({ amount: +amount - 1, id }))

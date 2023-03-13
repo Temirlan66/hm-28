@@ -1,4 +1,4 @@
-import { AppBar, Button, styled } from '@mui/material'
+import { AppBar, Button, Grid, styled } from '@mui/material'
 
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -63,18 +63,24 @@ export const Header = ({ onShowBasket }) => {
                 </Link>
             ) : null}
 
-            <MuiButton
-                onClick={themeHandler}
-                className={animationClass}
-                count={calculateTotalAmount()}
-            >
-                {themeMode === 'light' ? 'turn light mode' : 'turn durk mode'}
-            </MuiButton>
-            {isAuthorized ? (
-                <BtnStyle onClick={signOutHandler}>Sign Out</BtnStyle>
-            ) : (
-                <BtnStyle onClick={signinHandler}>Sign In</BtnStyle>
-            )}
+            <Grid sx={{ width: '350px' }}>
+                <Grid style={{ gap: '120px' }}>
+                    <MuiButton
+                        onClick={themeHandler}
+                        className={animationClass}
+                        count={calculateTotalAmount()}
+                    >
+                        {themeMode === 'light'
+                            ? 'turn light mode'
+                            : 'turn durk mode'}
+                    </MuiButton>
+                    {isAuthorized ? (
+                        <BtnStyle onClick={signOutHandler}>Sign Out</BtnStyle>
+                    ) : (
+                        <BtnStyle onClick={signinHandler}>Sign In</BtnStyle>
+                    )}
+                </Grid>
+            </Grid>
         </Container>
     )
 }
@@ -111,19 +117,13 @@ const Logo = styledComponents.p`
 
 `
 const BtnStyle = styled(Button)`
-    background-color: white;
-    color: #481805;
+    color: #dc9130;
     padding: 10px 20px;
-    &:hover {
-        background-color: #c44814;
-        color: white;
-    }
 `
 const Order = styled('span')`
     color: white;
     font-size: 25px;
     font-weight: 700;
     padding: 10px;
-    background-color: blue;
     border-radius: 5px;
 `

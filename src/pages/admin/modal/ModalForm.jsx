@@ -74,12 +74,10 @@ const ModalForm = ({
                         </CancelButon>
                         {change ? (
                             <AddButton onClick={saveUpdateMealHandler}>
-                                Save Meal
+                                Save
                             </AddButton>
                         ) : (
-                            <AddButton onClick={submitHandler}>
-                                ADD Meal
-                            </AddButton>
+                            <AddButton onClick={submitHandler}>ADD</AddButton>
                         )}
                     </Container>
                 </StyledModal>

@@ -1,9 +1,3 @@
-// /orders post body: {totalPrice: number}
-
-// get orders /orders get my orders
-// */
-//  get orders/all for admin
-
 import { axiosInstace } from '../axiosInstace'
 
 export const getBasketRequest = () => {

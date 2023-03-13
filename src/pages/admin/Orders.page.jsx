@@ -30,7 +30,6 @@ export default function StickyHeadTable() {
     }, [])
 
     const { meals, isLoading, error } = useSelector((state) => state.orders)
-    console.log(meals)
 
     const date = (day) => {
         const formatDate = format(new Date(day), 'dd.MMM H:mma')
@@ -60,13 +59,17 @@ export default function StickyHeadTable() {
                     <TableHead>
                         <TableRow>
                             <StyledTableCell>Name</StyledTableCell>
-                            <StyledTableCell paddinLeft="3rem" align="center">
+                            <StyledTableCell
+                                paddinLeft="3rem"
+                                align="center"
+                                color="white"
+                            >
                                 Meals
                             </StyledTableCell>
-                            <StyledTableCell align="left">
+                            <StyledTableCell align="left" color="#FFF">
                                 Total Price
                             </StyledTableCell>
-                            <StyledTableCell align="center">
+                            <StyledTableCell align="center" color="#FFF">
                                 Date
                             </StyledTableCell>
                         </TableRow>
@@ -116,14 +119,13 @@ export default function StickyHeadTable() {
                                                             marginRight: '1rem',
                                                         }}
                                                     >
-                                                        {item.title}{' '}
+                                                        {item.title}
                                                     </h4>
                                                     <h4
                                                         style={{
                                                             marginRight: '1rem',
                                                         }}
                                                     >
-                                                        {' '}
                                                         price : {item.price}
                                                     </h4>
                                                     <h4>

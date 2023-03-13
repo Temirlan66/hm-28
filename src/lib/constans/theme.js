@@ -3,9 +3,9 @@ import { store } from '../../store'
 export const lightTheme = {
     palette: {
         primary: {
-            main: '#8a2b06',
-            light: '#c44814',
-            dark: '#481805',
+            main: '#a47231',
+            light: '#a47231',
+            dark: '#a47231',
             constrastText: '#FFF',
         },
         secondary: {
@@ -33,15 +33,14 @@ export const lightTheme = {
         fontFamily: 'Roboto',
         fontSize: 14,
     },
-    spacyng: {},
 }
 
 export const darkTheme = {
     palette: {
         primary: {
-            main: 'rgb(56, 14, 170)',
-            light: 'rgb(59, 8, 201)',
-            dark: 'rgb(36, 13, 99)',
+            main: '#3f3f3f',
+            light: '#3f3f3f',
+            dark: '#3f3f3f',
             contrastText: '#fff',
         },
         secondary: {
@@ -69,7 +68,6 @@ export const darkTheme = {
         fontFamily: 'Roboto',
         fontSize: 14,
     },
-    spacyng: {},
 }
 
 export const getTheme = () => {

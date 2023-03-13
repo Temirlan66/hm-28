@@ -37,7 +37,7 @@ export const Meals = () => {
 }
 
 const Card = styled('div')(({ theme }) => ({
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.main,
     borderRadius: '16px',
     width: '75%',
     padding: '40px 40px 36px 40px',

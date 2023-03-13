@@ -167,7 +167,7 @@ const MealsAdmin = () => {
                                                     )
                                                 }
                                             >
-                                                Edite
+                                                Update
                                             </MealButtons>
 
                                             <MealButtons
@@ -221,50 +221,24 @@ const StyledButton = styled(Button)(({ theme }) => ({
     color: 'white',
     fontSize: '15px',
     marginRight: '20px',
-    '&:hover': {
-        backgroundColor: theme.palette.primary.light,
-        color: 'white',
-    },
 }))
 
 const Title = styled('h1')`
-    color: black;
+    color: #e8e1e1;
 `
 const MealList = styled('ul')`
     margin-top: 100px;
     background-color: white;
+    color: #ae7e24;
     padding: 40px;
     border-radius: 20px;
     list-style: none;
-    //
 `
-// const List = styled('li')`
-//     display: flex;
-//     align-items: center;
-//     width: 100%;
-//     padding: 10px;
-//     justify-content: space-between;
-//     h2 {
-//         font-size: 20px;
-//     }
-//     p {
-//         max-width: 300px;
-//     }
-//     span {
-//         font-size: 20px;
-//         font-weight: 700;
-//         margin-right: 40px;
-//     }
-// `
+
 const MealButtons = styled(Button)(({ theme }) => ({
     width: '100px',
     height: '50px',
     backgroundColor: theme.palette.primary.main,
     color: ' white',
-
     marginLeft: '10px',
-
-    '&:hover': {
-        backgroundColor: theme.palette.primary.light,
-    },
 }))
